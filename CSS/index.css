@@ -1,0 +1,170 @@
+@font-face{
+    font-family: LOTR;
+    src:url(hobbitonbrushhand.ttf);
+}
+/*Selector que afecta a todos los labels*/
+*{
+    margin: 0;
+}
+
+/*Los estilos de mi body */
+body{
+    /* background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment:fixed;
+    background-color: gray; */
+    background: gray url(logo.png) no-repeat center top fixed;
+    color: black;
+}
+
+p{
+    border:solid black 1px;
+    font-family: 'Antic Slab', serif;
+    transition: all 6s 1s ease;
+}
+
+h1{
+    font-family: 'Antic Slab', serif;
+    word-spacing: 2.5px;
+    text-align: center;
+    /* animation-name: brincar;
+    animation-duration: 3s;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2; */
+    animation: brincar 3s .4s forwards 2;
+    /*Animaciones para más navegadores*/
+    -webkit-animation: brincar 3s .4s forwards 2;
+    -moz-animation: brincar 3s .4s forwards 2;
+    -o-animation: brincar 3s .4s forwards 2;
+
+}
+
+@keyframes brincar{
+    0%{
+        transform: translateY(0);
+        color: black;
+    }
+    25%{
+        transform:translateY(-25px);
+        color: red;
+    }
+    50%{
+        transform:translateY(0px);
+        color: black;
+    }
+    75%{
+        transform: translateY(-25px);
+        color: red;
+    }
+    100%{
+        transform: translateY(0);
+        color: black;
+    }
+}
+/*Keyframes para más navegadores*/
+@-webkit-keyframes brincar{
+    0%{
+        transform: translateY(0);
+        color: black;
+    }
+    25%{
+        transform:translateY(-25px);
+        color: red;
+    }
+    50%{
+        transform:translateY(0px);
+        color: black;
+    }
+    75%{
+        transform: translateY(-25px);
+        color: red;
+    }
+    100%{
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+@-moz-keyframes brincar{
+    0%{
+        transform: translateY(0);
+        color: black;
+    }
+    25%{
+        transform:translateY(-25px);
+        color: red;
+    }
+    50%{
+        transform:translateY(0px);
+        color: black;
+    }
+    75%{
+        transform: translateY(-25px);
+        color: red;
+    }
+    100%{
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+@-o-keyframes brincar{
+    0%{
+        transform: translateY(0);
+        color: black;
+    }
+    25%{
+        transform:translateY(-25px);
+        color: red;
+    }
+    50%{
+        transform:translateY(0px);
+        color: black;
+    }
+    75%{
+        transform: translateY(-25px);
+        color: red;
+    }
+    100%{
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+
+
+
+a{
+    font-family:'Antic Slab', serif ;
+    text-decoration: none;
+    color: black;
+}
+
+p:hover{
+    background-color: white;
+}
+
+.titulo-destacado {
+    font-family: 'Oswald', sans-serif;
+    margin: 2% 3%;
+    padding: 1% 2%;
+}
+
+.pelicula-favorita{
+    font-family: LOTR;
+}
+
+#primera-foto{
+    /* position:relative;
+    z-index: -1;
+    left: 40%; */
+    margin-top: 1%;
+    margin-left: 45%;
+    transition: transform 2s .3s ease-in;
+}
+
+#primera-foto:hover{
+    transform: scale(2,2);
+}
